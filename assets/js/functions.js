@@ -82,6 +82,8 @@ $( document ).ready(function() {
 
   });
 
+
+  
   // determine scroll, swipe, and arrow key direction
   function updateHelper(param) {
 
@@ -253,6 +255,11 @@ $( document ).ready(function() {
 
   }
 
+  $('input').on('change', function() {
+    $('body').toggleClass('blue');
+  });
+
+  
   function transitionLabels() {
 
     $('.work-request--information input').focusout(function(){
